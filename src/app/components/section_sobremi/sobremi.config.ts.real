@@ -1,0 +1,5 @@
+export const parrafos = [
+      'Con más de 3 años de experiencia trabajando como desarrollador web además delaprendizaje autodidacta y mis propios proyectos, si tuviera que elegir me inclino hacia el frontend.',
+      'Admiro cómo la tecnología puede transformar ideas en realidad, y disfruto particularmente enfrentándome a los desafíos del desarrollo frontend. Mi habilidad para fusionar diseño y funcionalidad me ha permitido crear interfaces atractivas y accesibles que no solo son visualmente agradables, sino también intuitivas para los usuarios.',
+      'Más allá del código me encanta mantenerme al día y aprender. Estaría emocionado de unirme a equipos innovadores y participar en proyectos que desafíen mis habilidades y me permitan seguir creciendo como profesional.'
+]
