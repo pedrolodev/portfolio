@@ -12,7 +12,10 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
       title: 'Portfolio Jesus Pedro',
-      description: ''
+      description: '',
+      icons: {
+            icon: '/favicon.ico'
+      }
 }
 
 export default function RootLayout({ children }: { children: ReactNode }) {
