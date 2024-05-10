@@ -8,6 +8,7 @@ export async function logger(
       time: string,
       project: string
 ) {
+      console.log('HOLA??')
       const url = apiAddress + '/logs'
       const id = uuidv4()
       const opciones = {
@@ -18,7 +19,7 @@ export async function logger(
             body: JSON.stringify({ id, ip, userAgent, time, project })
       }
       try {
-            await fetch(url, opciones)
+            //await fetch(url, opciones)
       } catch (e) {
             console.log(e)
       }
