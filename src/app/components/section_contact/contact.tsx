@@ -21,7 +21,7 @@ export default function Contact() {
             const sendMailPromise = sendMail(
                   'jesuspedrolopezlopez10@gmail.com',
                   'Contact Message mainPage',
-                  `Email: ${data.email} <br/> Mensaje:${data.message}`
+                  `Email: ${data.email} - Mensaje:${data.message}`
             )
 
             await toast.promise(sendMailPromise, {
@@ -70,7 +70,7 @@ export default function Contact() {
                         >
                               <h2 className={styles.titulo}>Correo</h2>
                               <p className={styles.correoElectronico}>
-                                    tucorreo@email.com
+                                    jesuspedrolodev@gmail.com
                               </p>
                         </div>
                         <div
@@ -81,7 +81,7 @@ export default function Contact() {
                         >
                               <h2 className={styles.titulo}>GitHub</h2>
                               <p className={styles.correoElectronico}>
-                                    github.com/jesuspedrolodev
+                                    github.com/pedrolodev
                               </p>
                         </div>
                   </div>

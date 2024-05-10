@@ -1,43 +1,29 @@
 import { NextResponse, type NextRequest } from 'next/server'
 import { v4 as uuidv4 } from 'uuid'
 
-const apiAddress = process.env.API_ADDRESS
-
 export async function middleware(request: NextRequest) {
-      const id = uuidv4()
-      const ip = request.headers.get('x-forwarded-for')
-      const userAgent = request.headers.get('user-agent')
+      const ip = request.headers.get('x-forwarded-for') || ''
+      const userAgent = request.headers.get('user-agent') || ''
       const time = new Date().toLocaleString('es-ES', {
             timeZone: 'Europe/Madrid'
       })
 
-      const url = apiAddress + '/logs'
-      const objectToSend = {
-            ip,
-            userAgent,
-            time,
-            id,
-            project: 'main'
+      const headers = new Headers()
+      headers.set('ip', ip)
+      headers.set('userAgent', userAgent)
+      headers.set('time', time)
+
+      const pathname = request.nextUrl.pathname
+      if (pathname === '/porfolio') {
+            headers.set('project', 'main_link')
+            return NextResponse.rewrite(new URL('/', request.url), { headers })
       }
 
-      const opciones = {
-            method: 'PUT',
-            headers: {
-                  'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(objectToSend)
-      }
-
-      try {
-            await fetch(url, opciones)
-      } catch (e) {
-            console.log('ERROR', e)
-      }
-
-      return NextResponse.next()
+      headers.set('project', 'main')
+      return NextResponse.next({ headers })
 }
 
 // See "Matching Paths" below to learn more
 export const config = {
-      matcher: '/'
+      matcher: ['/', '/porfolio']
 }

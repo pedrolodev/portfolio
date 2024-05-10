@@ -49,6 +49,10 @@
       opacity: 1;
 }
 
+.last_p {
+      text-align: center;
+}
+
 .intro * h1 {
       display: none;
 }

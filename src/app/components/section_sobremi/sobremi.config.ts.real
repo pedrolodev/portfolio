@@ -1,5 +1,5 @@
 export const parrafos = [
-      'Con más de 3 años de experiencia trabajando como desarrollador web además delaprendizaje autodidacta y mis propios proyectos, si tuviera que elegir me inclino hacia el frontend.',
-      'Admiro cómo la tecnología puede transformar ideas en realidad, y disfruto particularmente enfrentándome a los desafíos del desarrollo frontend. Mi habilidad para fusionar diseño y funcionalidad me ha permitido crear interfaces atractivas y accesibles que no solo son visualmente agradables, sino también intuitivas para los usuarios.',
-      'Más allá del código me encanta mantenerme al día y aprender. Estaría emocionado de unirme a equipos innovadores y participar en proyectos que desafíen mis habilidades y me permitan seguir creciendo como profesional.'
+      'Programador autodidacta con más de 3 años de experiencia trabajando como desarrollador web, si tuviera que elegir me inclino hacia el frontend. Como dice el refrán lo que no se ve no se valora.',
+      'Del lado backend me decanto por la arquitectura hexagonal , un paradigma de programación que se abstrae del lenguaje utilizado y que permite crear un sistema robusto, escalable, no dependiente de la infraestructura utilizada y que facilita la gestión de los test para la aplicación',
+      'Me encanta mantenerme al día y aprender. Estaría encantado de unirme a equipos innovadores y participar en proyectos que desafíen mis habilidades y me permitan seguir creciendo como profesional.'
 ]

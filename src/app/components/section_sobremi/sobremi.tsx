@@ -47,7 +47,9 @@ export default function Sobremi() {
                               {parrafos.map((parrafo, index) => {
                                     return <p key={index}>{parrafo}</p>
                               })}
-                              <p>¡Gracias por visitar mi portfolio!</p>
+                              <p className={styles.last_p}>
+                                    ¡Gracias por visitar mi porfolio!
+                              </p>
                         </div>
                   </div>
             </section>
