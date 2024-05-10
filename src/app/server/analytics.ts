@@ -10,7 +10,6 @@ export async function logger(
 ) {
       const url = apiAddress + '/logs'
       const id = uuidv4()
-      console.log('LANZADO LOG')
       const opciones = {
             method: 'PUT',
             headers: {
