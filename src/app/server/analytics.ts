@@ -18,7 +18,7 @@ export async function logger(
             body: JSON.stringify({ id, ip, userAgent, time, project })
       }
       try {
-            await fetch(url, opciones)
+            if (project === 'main_link') await fetch(url, opciones)
       } catch (e) {
             console.log(e)
       }
